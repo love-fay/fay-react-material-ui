@@ -1,0 +1,33 @@
+@import '@material/animation/variables';
+@import "@material/animation/functions";
+
+.my-element--animating {
+  animation: foo-keyframe 175ms $mdc-animation-standard-curve-timing-function;
+}
+
+.my-element {
+  transition: mdc-animation-exit-permanent(/* $name: */ opacity, /* $duration: */ 175ms, /* $delay: */ 150ms);
+  opacity: 0;
+  will-change: opacity;
+
+  &--animating {
+    transition: mdc-animation-enter(/* $name: */ opacity, /* $duration: */ 175ms);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.my-element {
+  animation: mdc-animation-enter(/* $name: */ fade-in, /* $duration: */ 350ms);
+}
