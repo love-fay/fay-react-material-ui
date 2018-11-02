@@ -33,7 +33,7 @@ class TopBar extends React.Component{
     };
 
     render(){
-        const {list, topBarTitle, children, modal, header} = this.props;
+        const {list, topBarTitle, children, modal, header, topBarRight} = this.props;
         const {open} = this.state;
         return (
             <div className="frm-drawer-modal">
@@ -46,6 +46,7 @@ class TopBar extends React.Component{
                                 <a className="mdc-top-app-bar__navigation-icon" style={{overflow: 'hidden'}}><Icon type='menu'/></a>
                                 <span className="mdc-top-app-bar__title">{topBarTitle}</span>
                             </section>
+                            <section className='mdc-top-app-bar__section mdc-top-app-bar__section--align-end'>{topBarRight}</section>
                         </div>
                     </header>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import TopBar from '../../../components/drawer/top-bar';
+import Button from '../../../components/button';
 
 class Drawer extends React.Component{
 
@@ -20,10 +21,14 @@ class Drawer extends React.Component{
 
     ];
 
+    toGithub = () => {
+        window.location.href = 'https://github.com/love-fay/fay-react-material-ui';
+    };
+
     render(){
         const {children} = this.props;
         return (
-            <TopBar list={this.list} topBarTitle='Fay React Material' open header={{title: 'Fay', subtitle:'869770665@qq.com'}}>
+            <TopBar list={this.list} topBarTitle='Fay React Material' topBarRight={<Button onClick={this.toGithub} iconType='github' style={{color: '#FFFFFF'}}>GitHub</Button>} open header={{title: 'Fay', subtitle:'869770665@qq.com'}}>
                 {children}
             </TopBar>
         )
