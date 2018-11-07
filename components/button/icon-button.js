@@ -18,18 +18,18 @@ class ButtonDemo extends React.Component{
     }
 
     render(){
-        const {iconType, className, children, extended, mini, exited, toggleContent, toggleType='icon', disabled, ...props} = this.props;
+        const {iconType, className, title, children, extended, mini, exited, toggleContent, toggleType='icon', disabled, ...props} = this.props;
         return (
             iconType ?
-            <button {...props} className="mdc-icon-button" ref={this.button} data-mdc-ripple-is-unbounded disabled={disabled}>
-                <Icon type={iconType}/>
+            <button {...props} className={classnames("mdc-icon-button", className)} ref={this.button} data-mdc-ripple-is-unbounded disabled={disabled} title={title}>
+                <Icon type={iconType} style={{fontSize: '12px'}}/>
             </button>
                 :
             <button
                 {...props}
                 aria-hidden="true"
                 aria-pressed="true"
-                className={classnames('mdc-icon-button mdc-icon-button--on', className)} ref={this.button} data-mdc-ripple-is-unbounded>
+                className={classnames('mdc-icon-button mdc-icon-button--on', className)} ref={this.button} data-mdc-ripple-is-unbounded title={title}>
                 {
                     toggleType === 'img' && [
                         <img className="mdc-icon-button__icon mdc-icon-button__icon--on" src={toggleContent[0]} key={toggleContent[0]}/>,

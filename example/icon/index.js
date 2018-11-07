@@ -5,5 +5,5 @@ import React from 'react';
 import Loadable from 'fay-react-lib/loadable';
 
 export default (props) => <Loadable loader={{
-    view: () => import(/* webpackChunkName: "FayReactMaterialUiIcon" */'./views')
+    view: () => import(/* webpackChunkName: "FayReactMaterialUiExampleIcon" */'./views')
 }} props={props}/>;

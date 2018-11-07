@@ -1,17 +1,19 @@
 import React from 'react';
+import LayoutGrid from '../../../components/layout-grid';
 import Card from './card';
-import '../style/index.scss';
 
 class Demo extends React.Component{
 
+    cells = [
+        {
+            cell: <Card/>,
+            span: 12
+        }
+    ];
 
     render(){
         return (
-            <div className='my-card'>
-                <Card>
-                    Button
-                </Card>
-            </div>
+            <LayoutGrid cells={this.cells} fixedColumnWidth/>
         )
     }
 }

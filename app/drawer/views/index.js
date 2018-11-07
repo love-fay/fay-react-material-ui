@@ -15,7 +15,19 @@ class Drawer extends React.Component{
                 {graphic: 'drawer', text: 'Drawers', href: '/drawer'},
                 {graphic: 'layout', text: 'Layout Grid', href: '/layout-grid'},
                 {graphic: 'list', text: 'Lists', href: '/list'},
-                {graphic: 'menu', text: 'Menus', href: '/menu'}
+                {graphic: 'menu', text: 'Menus', href: '/menu'},
+                {graphic: 'smile_o', text: 'Icons', href: '/icon'},
+                {graphic: 'tabs', text: 'Tabs', href: '/tab'},
+                {graphic: 'checkbox_o', text: 'Checkboxes', href: '/checkbox'},
+                {graphic: 'label', text: 'Floating Label', href: '/floating-label'},
+                {graphic: 'text_field', text: 'Text Field', href: '/text-field'},
+                {graphic: 'elevation', text: 'Elevation', href: '/elevation'},
+                {graphic: 'grid_list', text: 'Grid List', href: '/grid-list'},
+                {graphic: 'grid_list', text: 'Image List', href: '/image-list'},
+                {graphic: 'switch', text: 'Switches', href: '/switch'},
+                {graphic: 'slider', text: 'Sliders', href: '/slider'},
+                {graphic: 'progress', text: 'Linear Progress', href: '/linear-progress'},
+                {graphic: 'grid_list', text: 'Cards', href: '/card'}
             ],
         }
 

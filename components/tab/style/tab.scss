@@ -1,0 +1,11 @@
+@import "@material/tab/mdc-tab";
+@import "@material/tab-indicator/mdc-tab-indicator";
+
+.mdc-tab__icon{
+  fill: currentColor;
+}
+
+.mdc-tab--stacked .mdc-tab__icon{
+  padding-top: 0;
+  margin-top: 12px;
+}

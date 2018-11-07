@@ -1,15 +1,19 @@
 import React from 'react';
-import '../font/iconfont';
-import classnames from 'classnames';
+import LayoutGird from '../../../components/layout-grid';
+import Icons from './icons';
 
 class Demo extends React.Component{
 
+    cells = [
+        {
+            cell: <Icons/>,
+            span: 12
+        }
+    ];
+
     render(){
-        const {type, className} = this.props;
         return (
-            <svg className={classnames('material-icons', className)} aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                <use xlinkHref={'#icon-'+type}></use>
-            </svg>
+            <LayoutGird cells={this.cells} fixedColumnWidth/>
         )
     }
 }

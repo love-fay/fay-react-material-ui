@@ -1,0 +1,10 @@
+//$mdc-grid-list-tile-width: 300px;
+@import "@material/image-list/mdc-image-list";
+
+.my-image-list {
+  @include mdc-image-list-standard-columns(5);
+}
+
+.my-masonry-image-list{
+  @include mdc-image-list-masonry-columns(5);
+}

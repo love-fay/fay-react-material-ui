@@ -8,7 +8,7 @@ class Demo extends React.Component{
     render(){
         return (
             <div>
-                <Button iconType='heart-o'/>
+                <Button iconType='heart_o'/>
                 &nbsp;&nbsp;&nbsp;
                 <Button iconType='plus' extended>
                     Create
@@ -20,7 +20,7 @@ class Demo extends React.Component{
                 &nbsp;&nbsp;&nbsp;
                 <Button iconType='plus' exited/>
                 &nbsp;&nbsp;&nbsp;
-                <Button iconType='heart-o' className='app-fab--absolute'/>
+                <Button iconType='heart_o' className='app-fab--absolute'/>
             </div>
         )
     }

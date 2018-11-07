@@ -11,6 +11,19 @@ import Typography from '../../example/typography';
 import Drawer from '../drawer';
 import List from '../../example/list';
 import Dialog from '../../example/dialog';
+import Icon from '../../example/icon';
+import Tab from '../../example/tab';
+import Checkbox from '../../example/checkbox';
+import FloatingLabel from '../../example/floating-label';
+import TextField from '../../example/text-field';
+import Elevation from '../../example/elevation';
+import GridList from '../../example/grid-list';
+import ImageList from '../../example/image-list';
+import Switch from '../../example/switch';
+import Slider from '../../example/slider';
+import LinearProgress from '../../example/linear-progress';
+import Card from '../../example/card';
+import './style/index.scss';
 
 class Root extends React.Component{
 
@@ -29,6 +42,18 @@ class Root extends React.Component{
             'typography': <Drawer><Typography/></Drawer>,
             'drawer': <Drawer><Drawer/></Drawer>,
             'list': <Drawer><List/></Drawer>,
+            'icon': <Drawer><Icon/></Drawer>,
+            'tab': <Drawer><Tab/></Drawer>,
+            'checkbox': <Drawer><Checkbox/></Drawer>,
+            'floating-label': <Drawer><FloatingLabel/></Drawer>,
+            'text-field': <Drawer><TextField/></Drawer>,
+            'elevation': <Drawer><Elevation/></Drawer>,
+            'grid-list': <Drawer><GridList/></Drawer>,
+            'image-list': <Drawer><ImageList/></Drawer>,
+            'switch': <Drawer><Switch/></Drawer>,
+            'slider': <Drawer><Slider/></Drawer>,
+            'linear-progress': <Drawer><LinearProgress/></Drawer>,
+            'card': <Drawer><Card/></Drawer>,
             'comingSoon': <Drawer><ComingSoon/></Drawer>,
             '': <Drawer><Home/></Drawer>,
         };

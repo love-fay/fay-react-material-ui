@@ -7,9 +7,9 @@ class Demo extends React.Component{
     render(){
         return (
             <div>
-                <Button iconType='heart-o'/>
-                <Button iconType='heart-o' disabled/>
-                <Button toggleContent={['heart-o', 'heart']}/>
+                <Button iconType='heart_o'/>
+                <Button iconType='heart_o' disabled/>
+                <Button toggleContent={['heart_o', 'heart']}/>
                 {/*<Button toggleSrc={['heart-o', 'heart']} toggleType='img'/>*/}
             </div>
         )

@@ -1,9 +1,6 @@
-/**
- * Created by feichongzheng on 17/10/13.
- */
-import React from 'react';
-import Loadable from 'fay-react-lib/loadable';
+import Card from './card';
 
-export default (props) => <Loadable loader={{
-    view: () => import(/* webpackChunkName: "FayReactMaterialUiCard" */'./views')
-}} props={props}/>;
+export {
+    Card,
+    Card as default
+};
